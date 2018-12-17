@@ -9,7 +9,7 @@ class Explore extends React.Component {
 
     componentWillMount(){
         this.startHeaderHeight = 80
-        if(Platform.OS = 'android'){
+        if(Platform.OS == 'android'){
             this.startHeaderHeight = 100 + StatusBar.currentHeight
         }
     }
@@ -18,7 +18,7 @@ class Explore extends React.Component {
     return (
      <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1}}>
-            <View style={{height:this.startHeaderHeight, backgroundColor:'white',borderBottomWidth: 1,
+            <View style={{height: this.startHeaderHeight, backgroundColor:'white',borderBottomWidth: 1,
             borderBottomColor: 'white'}}>
                 <View style={{flexDirection: 'row', padding: 10,
                     backgroundColor: 'white', marginHorizontal: 20,
@@ -27,7 +27,12 @@ class Explore extends React.Component {
                     elavation: 1,
                     marginTop: Platform.OS == 'android' ? 30: null }}>
                     <Icon name='ios-search' size={24} style={{marginRight: 10}} />
-                    
+                    <TextInput 
+                        placeholder ="Try"
+                        placeholderTextColor = "grey"
+                        style = {{flex: 1, fontWeight: '700',
+                        backgroundColor: 'white'}}
+                    />
                 </View>
             </View>
         </View>
