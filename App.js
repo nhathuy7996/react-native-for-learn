@@ -8,6 +8,8 @@ import Explore from './Screens/Explore';
 import Saved from './Screens/Saved';
 import Trips from './Screens/Trips';
 
+
+
 class App extends React.Component {
   render() {
     return (
@@ -65,6 +67,7 @@ export default createBottomTabNavigator({
     }
   }
 })
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -2,8 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView,TextInput,Platform,
         StatusBar,ScrollView } from 'react-native';
 
+import {createStackNavigator} from 'react-navigation';
+
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import Detail from '../Screens/Detail.js';
+import Saved from '../Screens/Saved.js';
 
 class Explore extends React.Component {
 
@@ -49,7 +53,10 @@ class Explore extends React.Component {
   }
 }
 
-export default Explore;
+export default createStackNavigator({
+    Explore,
+    Detail
+});
 const styles = StyleSheet.create({
   container: {
     flex: 1,
