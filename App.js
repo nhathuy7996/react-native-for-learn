@@ -26,7 +26,7 @@ export default createBottomTabNavigator({
     navigationOptions:{
       tabBarLabel: 'EXPLORE', 
       tabBarIcon: ({tintColor})=>(
-        <Icon name = "ios-search" color={tintColor}
+        <Icon name = "ios-home" color={tintColor}
         size = {24} />
       )
     }
